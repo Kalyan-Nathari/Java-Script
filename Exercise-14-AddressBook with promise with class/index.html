@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="./domAccess.js"></script>
+  <script type="text/javascript" src="./contact.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript" src="./address.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <h1>Example for Person Data asyncrhonous data</h1>
+    <!-- Can you add a new Field to take json text for person information-->
+    <!-- Idea is to take lot of persons contact from json text-->
+
+    <label>Enter Pid:</label> <input id="pid" placeholder="enter pid">
+    <label>Enter Name:</label> <input id="name" placeholder="enter name">
+    <label>Enter Age:</label> <input id="age" placeholder="enter age">
+    <label>Enter Hno:</label> <input id="hno" placeholder="enter house number">
+    <label>Enter Street:</label> <input id="street" placeholder="enter street">
+    <label>Enter city:</label> <input id="city" placeholder="enter city">
+    <button id="add" onclick="addPerson();">Add Person</button>
+  </div>
+
+  <div>
+    <br>
+    <h2>Get Persons List by age</h2>
+    <label>Enter age:</label> <input id="ageCondition" placeholder="enter 0 for all">
+    <button id="ageConditionBtn" onclick="getByAgeCondition();">Get</button>
+
+    <p id="personsList"> empty</p>
+
+    <h2>Scroll Persons List</h2>
+    <label>Enter Scroll Time in Seconds: </label><input id="scrollTime">
+    <button onClick="onStartScroll();">Start Scroll</button>
+    <button onClick="onStopScroll();">Stop Scroll</button>
+    <p id="randomScrollText"> empty</p>
+    <label id = "errorRes"></label>
+
+  </div>
+  <div>
+    <h1>Example for Contacts and Persons List</h1>
+    <!-- add people via hard coded list -->
+    <h4 style="color:darkblue">Click to Populate SELECT with JSON</h4>
+    <button id="add" onclick="addPersons();">Add Persons</button>
+  </div>
+  <hr>
+  <div>
+  
+  <!--The SELECT element.-->
+  <select id="sel" onchange="show(this)">
+    <option value="">-- Select --</option>
+  </select>
+  <p id="msg"></p>
+  </div>
+  <div>
+    <br>
+    <!-- Add code to map one contact with another -->
+    <!-- build your own UI to add one contact to another contact as friend -->
+   
+    <!-- Build your own simple UI to add one person to another as his/her friends list-->
+    <!-- for ex: for modi->kcr, amit   -- for kcr-> kavitha, ktr   for jagan-> Naidu, modi, kavitha -->
+    <!-- all the friends should be in the existing contacts list-->
+    
+    <!-- following code is to get a person details including his/her friends list -->
+    <h2>Get Persons details including address book </h2>
+    <label>Enter Name:</label> <input id="pidCondition" placeholder="">
+    <button id="pidConditionBtn" onclick="getPersonDetails();">Get</button>
+
+    <p id="personsDetails"> empty</p>
+     <h2> Add a friend to given Person</h2>
+
+  </div>
+</body>
+</html>

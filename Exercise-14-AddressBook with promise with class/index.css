@@ -1,0 +1,14 @@
+#personsList {
+  width: 400px;
+  height: 400px;
+  padding: 2px, 2px, 2px, 2px;
+  border: 1px solid red;
+};
+p#nameLabelXYZ {
+  border: 1px solid red;
+  height: 50px;
+  width: 200px;
+  padding: 2px;
+  margin: 2px;
+  font-size: large;
+}
