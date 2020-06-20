@@ -1,0 +1,20 @@
+input {
+  border-radius: 50px;
+  height :30px;
+  
+}
+button {
+  margin-top:20px;
+  background-color: green;
+  border-radius: 5px;
+  height : 30px;
+  color:white;
+}
+
+label
+{
+  display: inline-block;
+  
+  width: 100px;
+  text-align: left;
+}
